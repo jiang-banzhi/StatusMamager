@@ -43,8 +43,8 @@ ext {
 
             group         : "com.banzhi.emptysample", // Maven Group ID for the artifact，一般填你唯一的包名
 
-            siteUrl       : 'https://github.com/jiang-banzhi/IndexRecyclerViewSample',   // 项目的主页
-            gitUrl        : 'https://github.com/jiang-banzhi/IndexRecyclerViewSample.git',   // Git仓库的url
+            siteUrl       : 'https://github.com/jiang-banzhi/EmptyLayout',   // 项目的主页
+            gitUrl        : 'https://github.com/jiang-banzhi/EmptyLayout.git',   // Git仓库的url
 
             //developer
             developerId   : 'jiangyang',      //填写的一些基本信息
