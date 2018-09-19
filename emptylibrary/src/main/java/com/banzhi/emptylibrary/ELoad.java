@@ -29,8 +29,6 @@ import java.lang.reflect.Method;
  */
 
 public class ELoad implements View.OnClickListener {
-    public static final String TAG_EMPTY = "empty";
-    public static final String TAG_ERROR = "error";
     Context mContext;
     View targetView;
     View mEmptyView;
@@ -117,7 +115,6 @@ public class ELoad implements View.OnClickListener {
             emptyContainer = new FrameLayout(mContext);
             emptyContainer.setLayoutParams(targetParams);
             parent.addView(emptyContainer, index, targetParams);
-
         }
         ViewGroup.MarginLayoutParams params = new ViewGroup.MarginLayoutParams(
                 ViewGroup.MarginLayoutParams.MATCH_PARENT, ViewGroup.MarginLayoutParams.MATCH_PARENT);
@@ -126,7 +123,6 @@ public class ELoad implements View.OnClickListener {
         emptyContainer.addView(mErrorView, params);
         emptyContainer.addView(mLoadView, params);
         showContent();
-
     }
 
     public void showContent() {
@@ -134,7 +130,6 @@ public class ELoad implements View.OnClickListener {
         mEmptyView.setVisibility(View.GONE);
         mErrorView.setVisibility(View.GONE);
         mLoadView.setVisibility(View.GONE);
-
     }
 
     public void showError() {
@@ -240,6 +235,7 @@ public class ELoad implements View.OnClickListener {
 
         public Builder setContentView(View contentView) {
             this.contentView = contentView;
+            isFillWindow = false;
             return this;
         }
 

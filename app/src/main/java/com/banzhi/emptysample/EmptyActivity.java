@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.banzhi.emptylibrary.ELoad;
 import com.banzhi.emptylibrary.annotation.ViewClick;
 import com.banzhi.emptylibrary.enums.LoadType;
+import com.banzhi.emptylibrary.interfaces.OnLayoutClickListener;
 
 public class EmptyActivity extends AppCompatActivity {
 
@@ -27,13 +28,26 @@ public class EmptyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         View groupView = LayoutInflater.from(this).inflate(R.layout.activity_empty, null);
         setContentView(groupView);
-        TextView textView = findViewById(R.id.textview2);
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter();
         recyclerView.setAdapter(adapter);
-        helper = new ELoad.Builder(this).build();
+        helper = new ELoad.Builder(this)
+                .setEmptyView(new EmptyView(this,"空数据"))
+                .setErrorView(new EmptyView(this,"错误布局"))
+                .build();
         helper.init(this);
+        helper.init(new OnLayoutClickListener() {
+            @Override
+            public void onEmptyViewClick() {
+
+            }
+
+            @Override
+            public void onErrorViewClick() {
+
+            }
+        });
     }
 
     @Override

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,7 +33,11 @@ public class PartEmptyActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter();
         recyclerView.setAdapter(adapter);
-        helper = new ELoad.Builder(this, recyclerView).build();
+        helper = new ELoad.Builder(this)
+                .setContentView(recyclerView)
+                .setEmptyView(new EmptyView(this,"空数据"))
+                .setErrorView(new EmptyView(this,"错误布局"))
+                .build();
         helper.init(this);
     }
 
@@ -45,6 +50,7 @@ public class PartEmptyActivity extends AppCompatActivity {
 
     @ViewClick(LoadType.BOTH)
     public void click() {
+        Log.i("result", "click: "+System.currentTimeMillis());
         if (type == 1) {
             Toast.makeText(this, "点击空布局", Toast.LENGTH_SHORT).show();
             helper.showEmpty();

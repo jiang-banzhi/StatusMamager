@@ -4,10 +4,8 @@ import android.content.Context;
 import android.graphics.Color;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.banzhi.emptylibrary.interfaces.ViewLoader;
@@ -22,9 +20,11 @@ import com.banzhi.emptylibrary.interfaces.ViewLoader;
  */
 
 public class EmptyView extends ViewLoader {
+    String text;
 
-    public EmptyView(Context context) {
+    public EmptyView(Context context, String text) {
         super(context);
+        this.text = text;
     }
 
     @Override
@@ -36,11 +36,8 @@ public class EmptyView extends ViewLoader {
         textView.setGravity(Gravity.CENTER);
         textView.setTextColor(Color.GRAY);
         textView.setTextSize(16f);
-        textView.setText("自定义空数据界面");
+        textView.setText("自定义"+textView+"界面");
         frameLayout.addView(textView);
-        ProgressBar progressBar = new ProgressBar(getContext(), null, android.R.attr.progressBarStyle);
-        progressBar.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-        frameLayout.addView(progressBar);
         return frameLayout;
 //        return LayoutInflater.from(getContext()).inflate(R.layout.empty,  null);
     }
