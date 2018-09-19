@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_empty"
+        android:title="显示空布局"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_loading"
+        android:title="显示加载布局"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_error"
+        android:title="显示错误布局"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_content"
+        android:title="显示内容"
+        app:showAsAction="never" />
+
+</menu>

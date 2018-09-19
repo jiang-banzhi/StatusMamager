@@ -1,0 +1,58 @@
+ext {
+    plugins = [
+            application: 'com.android.application',
+            library    : 'com.android.library',
+    ]
+
+    android = [
+            applicationId    : "com.banzhi.emptysample",
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 14,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.3"
+    ]
+
+
+
+    dependencies = [
+            fragment       : 'com.android.support:support-fragment:26.1.0',
+            support_v4      : 'com.android.support:support-v4:26.1.0',
+            appCompat      : 'com.android.support:appcompat-v7:26.1.0',
+            design         : 'com.android.support:design:26.1.0',
+            recyclerview   : 'com.android.support:recyclerview-v7:26.1.0',
+            flexbox        : 'com.google.android:flexbox:0.1.2',
+            constraint     : 'com.android.support.constraint:constraint-layout:1.1.3',
+            //rx
+            retrofit       : 'com.squareup.retrofit2:retrofit:2.2.0',
+            converter_gson : 'com.squareup.retrofit2:converter-gson:2.2.0',
+            adapter_rxjava2: 'com.squareup.retrofit2:adapter-rxjava2:2.2.0',
+            rxjava2        : 'io.reactivex.rxjava2:rxjava:2.1.0',
+            rxandroid2     : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            gson           : 'com.google.code.gson:gson:2.6.2'
+
+
+    ]
+
+    bintray = [
+            dcendents     : 'com.github.dcendents.android-maven',
+            bintray       : 'com.jfrog.bintray',
+
+            version       : "1.0.0",
+
+            group         : "com.banzhi.emptysample", // Maven Group ID for the artifact，一般填你唯一的包名
+
+            siteUrl       : 'https://github.com/jiang-banzhi/IndexRecyclerViewSample',   // 项目的主页
+            gitUrl        : 'https://github.com/jiang-banzhi/IndexRecyclerViewSample.git',   // Git仓库的url
+
+            //developer
+            developerId   : 'jiangyang',      //填写的一些基本信息
+            developerName : 'banzhi',
+            developerEmail: 'jy494495991@gmail.com',
+
+            //bintray- pkg
+            bintrayRepo   : "maven",
+            bintrayName   : 'emptylayout',
+    ]
+}
