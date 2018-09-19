@@ -1,4 +1,6 @@
-###使用
+### 使用
+
+
     添加依赖
     
     dependencies {
@@ -28,7 +30,8 @@
               break;
          
      }
-####说明
+#### 说明
+
     为了统一管理空布局 错误布局，设置空布局建议新建类继承ViewLoader，如:
     public class EmptyLoad extends ViewLoader {
          
