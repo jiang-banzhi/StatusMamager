@@ -36,7 +36,7 @@ public class EmptyView extends ViewLoader {
         textView.setGravity(Gravity.CENTER);
         textView.setTextColor(Color.GRAY);
         textView.setTextSize(16f);
-        textView.setText("来看电视剧覅为了口袋接二胎");
+        textView.setText("自定义空数据界面");
         frameLayout.addView(textView);
         ProgressBar progressBar = new ProgressBar(getContext(), null, android.R.attr.progressBarStyle);
         progressBar.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));

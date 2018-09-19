@@ -67,7 +67,8 @@ public class TabFragment extends Fragment {
             } else {
                 imageView = (ImageView) sparseArray.get(R.id.imageview);
             }
-            helper = new ELoad.Builder(getActivity(), imageView).build(this);
+            helper = new ELoad.Builder(getActivity(), imageView).build();
+            helper.init(this);
         }
     }
 

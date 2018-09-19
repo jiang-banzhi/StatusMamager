@@ -47,8 +47,18 @@ public class ELoad implements View.OnClickListener {
         mErrorView = builder.errorView;
         mLoadView = builder.loadingView;
         isFillWindow = builder.isFillWindow;
-        object = builder.object;
-        mListener = builder.listener;
+
+
+    }
+
+    public void init(OnLayoutClickListener listener) {
+        mListener = listener;
+        init();
+        initListener();
+    }
+
+    public void init(Object clz) {
+        object = clz;
         init();
         initListener();
     }
@@ -58,10 +68,6 @@ public class ELoad implements View.OnClickListener {
         mErrorView.setTag(LoadType.ERROR);
         mEmptyView.setOnClickListener(this);
         mErrorView.setOnClickListener(this);
-    }
-
-    public ELoad(Context context) {
-        this.mContext = context;
     }
 
     private void init() {
@@ -213,6 +219,7 @@ public class ELoad implements View.OnClickListener {
             inflater = LayoutInflater.from(context);
         }
 
+
         public Builder(Context context) {
             this(context, null);
             isFillWindow = true;
@@ -226,8 +233,13 @@ public class ELoad implements View.OnClickListener {
         public Builder isFillWindow(boolean isFill) {
             this.isFillWindow = isFill;
             if (!isFillWindow) {
-                throw new NullPointerException("如果isFillWindow=false,必须设置targetview!");
+                throw new NullPointerException("如果isFillWindow=false,必须设置contentView!");
             }
+            return this;
+        }
+
+        public Builder setContentView(View contentView) {
+            this.contentView = contentView;
             return this;
         }
 
@@ -279,27 +291,6 @@ public class ELoad implements View.OnClickListener {
             return new ELoad(this);
         }
 
-        /**
-         * 通过回调设置点击
-         *
-         * @param listener
-         * @return
-         */
-        public ELoad build(OnLayoutClickListener listener) {
-            this.listener = listener;
-            return build();
-        }
-
-        /**
-         * 反射设置点击
-         *
-         * @param o
-         * @return
-         */
-        public ELoad build(Object o) {
-            this.object = o;
-            return build();
-        }
     }
 
 

@@ -32,7 +32,8 @@ public class PartEmptyActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter();
         recyclerView.setAdapter(adapter);
-        helper = new ELoad.Builder(this, recyclerView).build(this);
+        helper = new ELoad.Builder(this, recyclerView).build();
+        helper.init(this);
     }
 
 

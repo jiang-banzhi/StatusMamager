@@ -32,7 +32,8 @@ public class EmptyActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter();
         recyclerView.setAdapter(adapter);
-        helper = new ELoad.Builder(this).build(this);
+        helper = new ELoad.Builder(this).build();
+        helper.init(this);
     }
 
     @Override

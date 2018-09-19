@@ -56,7 +56,8 @@ public class SampleFragment extends Fragment {
     ELoad helper;
 
     private void initEmpty() {
-        helper = new ELoad.Builder(getActivity(), imageView).build(this);
+        helper = new ELoad.Builder(getActivity(), imageView).build();
+        helper.init(this);
     }
 
     @ViewClick(LoadType.BOTH)
