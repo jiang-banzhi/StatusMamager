@@ -2,7 +2,7 @@
     添加依赖
     
     dependencies {
-         compile 'com.banzhi.emptysample:emptylibrary:1.0.0'
+         compile 'com.banzhi.emptysample:emptylibrary:1.0.1'
     }
     
      helper = new ELoad.Builder(this, recyclerView).build();

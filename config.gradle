@@ -39,7 +39,7 @@ ext {
             dcendents     : 'com.github.dcendents.android-maven',
             bintray       : 'com.jfrog.bintray',
 
-            version       : "1.0.0",
+            version       : "1.0.1",
 
             group         : "com.banzhi.emptysample", // Maven Group ID for the artifact，一般填你唯一的包名
 
