@@ -36,7 +36,7 @@ public class EmptyView extends ViewLoader {
         textView.setGravity(Gravity.CENTER);
         textView.setTextColor(Color.GRAY);
         textView.setTextSize(16f);
-        textView.setText("自定义"+textView+"界面");
+        textView.setText("自定义"+text+"界面");
         frameLayout.addView(textView);
         return frameLayout;
 //        return LayoutInflater.from(getContext()).inflate(R.layout.empty,  null);

@@ -2,7 +2,6 @@ package com.banzhi.emptylibrary;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -105,7 +104,8 @@ public class ELoad implements View.OnClickListener {
         parent.removeView(targetView);
         ViewGroup emptyContainer;
         if (targetParams instanceof ViewGroup.MarginLayoutParams) {//父容器是ConstraintLayout、RelativeLayout
-            emptyContainer = new ConstraintLayout(mContext);
+//            emptyContainer = new ConstraintLayout(mContext);
+            emptyContainer = new FrameLayout(mContext);
             emptyContainer.setId(targetView.getId());
             targetView.setId(-1);
             ViewGroup.MarginLayoutParams layoutParams = (ViewGroup.MarginLayoutParams) targetParams;
