@@ -18,7 +18,7 @@ ext {
 
     dependencies = [
             fragment       : 'com.android.support:support-fragment:26.1.0',
-            support_v4      : 'com.android.support:support-v4:26.1.0',
+            support_v4     : 'com.android.support:support-v4:26.1.0',
             appCompat      : 'com.android.support:appcompat-v7:26.1.0',
             design         : 'com.android.support:design:26.1.0',
             recyclerview   : 'com.android.support:recyclerview-v7:26.1.0',
@@ -41,10 +41,10 @@ ext {
 
             version       : "1.0.1",
 
-            group         : "com.banzhi.emptysample", // Maven Group ID for the artifact，一般填你唯一的包名
+            group         : android.applicationId, // Maven Group ID for the artifact，一般填你唯一的包名
 
-            siteUrl       : 'https://github.com/jiang-banzhi/EmptyLayout',   // 项目的主页
-            gitUrl        : 'https://github.com/jiang-banzhi/EmptyLayout.git',   // Git仓库的url
+            siteUrl       : 'https://github.com/jiang-banzhi/StatusMamager',   // 项目的主页
+            gitUrl        : 'https://github.com/jiang-banzhi/StatusMamager.git',   // Git仓库的url
 
             //developer
             developerId   : 'jiangyang',      //填写的一些基本信息
