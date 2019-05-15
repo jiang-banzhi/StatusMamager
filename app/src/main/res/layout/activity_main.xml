@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.banzhi.emptysample.MainActivity">
+    tools:context="com.banzhi.sample.MainActivity">
 
     <TextView
         android:id="@+id/tv_test1"

@@ -5,6 +5,6 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.banzhi.emptysample.ContainerActivity">
+    tools:context="com.banzhi.sample.ContainerActivity">
 
 </android.support.constraint.ConstraintLayout>

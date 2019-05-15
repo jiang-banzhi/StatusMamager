@@ -9,3 +9,4 @@
 .externalNativeBuild
 /emptylibrary/build/
 /app/build/
+/.idea/dbnavigator.xml

@@ -5,8 +5,8 @@
          compile 'com.banzhi.emptysample:emptylibrary:1.0.1'
     }
     
-     helper = new ELoad.Builder(this, recyclerView).build();
-     helper = new ELoad.Builder(this)
+     helper = new StatusManager.Builder(this, recyclerView).build();
+     helper = new StatusManager.Builder(this)
                 .setContentView(recyclerView)
                 .setEmptyView(new EmptyView(this,"空数据"))
                 .setErrorView(new EmptyView(this,"错误布局"))

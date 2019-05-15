@@ -5,7 +5,7 @@ ext {
     ]
 
     android = [
-            applicationId    : "com.banzhi.emptysample",
+            applicationId    : "com.banzhi.statusmanager",
             compileSdkVersion: 26,
             buildToolsVersion: "26.0.2",
             minSdkVersion    : 14,
@@ -53,6 +53,6 @@ ext {
 
             //bintray- pkg
             bintrayRepo   : "maven",
-            bintrayName   : 'emptylayout',
+            bintrayName   : 'StatusManager',
     ]
 }

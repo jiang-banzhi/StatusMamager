@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EmptyLayout.iml" filepath="$PROJECT_DIR$/EmptyLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StatusManager.iml" filepath="$PROJECT_DIR$/StatusManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/emptylibrary/emptylibrary.iml" filepath="$PROJECT_DIR$/emptylibrary/emptylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>
