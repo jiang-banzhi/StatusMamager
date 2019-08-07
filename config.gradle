@@ -15,7 +15,6 @@ ext {
     ]
 
 
-
     dependencies = [
             fragment       : 'com.android.support:support-fragment:26.1.0',
             support_v4     : 'com.android.support:support-v4:26.1.0',
@@ -39,10 +38,10 @@ ext {
             dcendents     : 'com.github.dcendents.android-maven',
             bintray       : 'com.jfrog.bintray',
 
-            version       : "1.0.1",
+            version       : "1.0.3",
 
             group         : android.applicationId, // Maven Group ID for the artifact，一般填你唯一的包名
-
+            artifactId    : "status",
             siteUrl       : 'https://github.com/jiang-banzhi/StatusMamager',   // 项目的主页
             gitUrl        : 'https://github.com/jiang-banzhi/StatusMamager.git',   // Git仓库的url
 

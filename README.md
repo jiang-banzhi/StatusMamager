@@ -2,7 +2,7 @@
     添加依赖
     
     dependencies {
-         compile 'com.banzhi.emptysample:StatusManager:1.0.2'
+         compile 'com.banzhi.statusmanager:status:1.0.3'
     }
     
      helper = new StatusManager.Builder(this, recyclerView).build();
