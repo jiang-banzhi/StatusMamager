@@ -16,7 +16,6 @@ install {
                 // Add your description here
                 name 'android 空布局 异常布局加载'    //项目描述
                 description "android 空布局 异常布局加载，无需在布局文件中使用，适用于activity、fragment、view"
-                artifactId  rootProject.ext.bintray.artifactId
                 url rootProject.ext.bintray.siteUrl
                 // Set your license
                 licenses {
