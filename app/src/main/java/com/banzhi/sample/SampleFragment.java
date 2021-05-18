@@ -1,7 +1,6 @@
 package com.banzhi.sample;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.banzhi.statusmanager.StatusManager;
 import com.banzhi.statusmanager.annotation.ViewClick;
