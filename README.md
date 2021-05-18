@@ -1,3 +1,6 @@
+
+[![](https://jitpack.io/v/jiang-banzhi/StatusMamager.svg)](https://jitpack.io/#jiang-banzhi/StatusMamager)
+
 ### 使用
     添加依赖
     
