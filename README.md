@@ -1,8 +1,17 @@
 ### 使用
     添加依赖
     
+    [![](https://jitpack.io/v/jiang-banzhi/StatusMamager.svg)](https://jitpack.io/#jiang-banzhi/StatusMamager)
+    
+    allprojects {
+    	repositories {
+    		...
+    		maven { url 'https://jitpack.io' }
+    	}
+    }
+    
     dependencies {
-            compile 'com.banzhi.statusmanager:library:1.0.3'
+            implementation 'com.github.jiang-banzhi:StatusMamager:1.0.4'
     }
     
      helper = new StatusManager.Builder(this, recyclerView).build();
