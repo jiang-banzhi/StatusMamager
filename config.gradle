@@ -11,7 +11,7 @@ ext {
             minSdkVersion    : 14,
             targetSdkVersion : 28,
             versionCode      : 1,
-            versionName      : "1.0.4"
+            versionName      : "2.0.1"
     ]
 
 
@@ -31,24 +31,4 @@ ext {
 
     ]
 
-    bintray = [
-            dcendents     : 'com.github.dcendents.android-maven',
-            bintray       : 'com.jfrog.bintray',
-
-            version       : "1.0.3",
-
-            group         : android.applicationId, // Maven Group ID for the artifact，一般填你唯一的包名
-            artifactId    : "status",
-            siteUrl       : 'https://github.com/jiang-banzhi/StatusMamager',   // 项目的主页
-            gitUrl        : 'https://github.com/jiang-banzhi/StatusMamager.git',   // Git仓库的url
-
-            //developer
-            developerId   : 'jiangyang',      //填写的一些基本信息
-            developerName : 'banzhi',
-            developerEmail: 'jy494495991@gmail.com',
-
-            //bintray- pkg
-            bintrayRepo   : "maven",
-            bintrayName   : 'StatusManager',
-    ]
 }
