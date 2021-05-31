@@ -12,7 +12,7 @@
     }
     
     dependencies {
-            implementation 'com.github.jiang-banzhi:StatusMamager:1.0.4'
+            implementation 'com.github.jiang-banzhi:StatusMamager:1.0.6'
     }
     
      helper = new StatusManager.Builder(this, recyclerView).build();
