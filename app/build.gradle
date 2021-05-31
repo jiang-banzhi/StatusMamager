@@ -30,8 +30,7 @@ dependencies {
     implementation rootProject.ext.dependencies.constraint
     implementation rootProject.ext.dependencies.design
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':library')
+//    implementation 'com.github.jiang-banzhi:StatusMamager:1.0.3'
 
 }
